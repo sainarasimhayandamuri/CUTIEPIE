@@ -51,7 +51,7 @@ errors = """
            from log group by day) as a
            inner join
            (select date(time) as day, count(*) as hits from log where status
-           like '%404%' group by day) as b
+           not like '200 OK' group by day) as b
            on a.day = b.day)
            as t where errp > 1.0
            """
