@@ -1,16 +1,24 @@
 # loganalysis project
 # Udacity project 3
 
-ABOUT:
-1.)Create a python file.
+## Description
 
-2.)Create a vagrant file.
+## Getting Started
 
-3.)Create a database news.
+1. Download this repositary.
 
-4.)Link the database to vagrant.
+2. Place base1.py file in shared vagrant folder.
 
-5.)Print the values of the database by using python.
+3. Power up vagrant by running 'vagrant up' in terminal that opened in the location of shared vagrant folder.
+
+4. Log into vagrant using the command 'vagrant ssh'.
+
+5. To set up database,cd into the vagrant directory and use the command psql -d news -f newsdata.sql.
+
+6. Run base1.py script using command 'python base1.py'.
+
+7. This will outputs the popular views, popular articles, errors from the database.
+
 
 REFERENCE:
 PYTHON 3
